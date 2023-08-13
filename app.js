@@ -149,3 +149,4 @@ app.get("/districts/:districtId/details/", async (request, response) => {
   const getStateNameQueryResponse = await database.get(getStateNameQuery);
   response.send(getStateNameQueryResponse);
 }); //sending the required response
+module.exports = app;
