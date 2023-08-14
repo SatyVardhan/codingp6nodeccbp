@@ -23,7 +23,7 @@ initialiseServerAndDatabase();
 
 app.get("/states/", async (request, response) => {
   const getAllStatesQuery = `
-    SELECT * FROM states;`;
+    SELECT * FROM state;`;
   const statesList = await db.all(getAllStatesQuery);
   const convertToCamelCase = (stateObject) => {
     return {
